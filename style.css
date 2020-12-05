@@ -128,7 +128,19 @@ button {
 }
 /* Hero */
 .hero {
-  background-color: var(--primary-background-color);
+  max-width: 1600px;
+  max-height: 600px;
+  margin: auto;
+  background: rgba(47, 48, 58, 0.4);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(./images/background.jpg);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -168,6 +180,14 @@ button {
 }
 .features-block {
   margin-right: 30px;
+}
+.features-block::before {
+  content: "";
+  display: block;
+  height: 120px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 .features-title {
   min-width: 270px;
@@ -263,6 +283,22 @@ button {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+}
+/*Clients*/
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.client-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--primary-title-color);
+}
+.clients-container {
+  display: flex;
 }
 /* footer */
 .footer {
