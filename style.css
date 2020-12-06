@@ -318,6 +318,7 @@ button {
 }
 .client-title {
   text-align: center;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -330,13 +331,38 @@ button {
 .client-card {
   width: 170px;
   height: 90px;
-  text-align: center;
+  border: 1px solid #afb1b8;
+
+  border-radius: 4px;
+  margin-right: 30px;
+}
+.client-card:last-child {
+  margin-right: 0px;
+}
+.client-card a:hover {
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
+.client-card > a {
+  display: flex;
+  color: #afb1b8;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.client-icon {
+  fill: currentColor;
 }
 /* footer */
-.footer {
+.footer .container {
+  display: flex;
+  align-items: baseline;
   padding-bottom: 60px;
   padding-top: 60px;
   background-color: var(--primary-background-color);
+}
+.info {
+  margin-right: 70px;
 }
 .footer-adress {
   margin-top: 20px;
@@ -368,6 +394,34 @@ button {
 .footer-tel:hover,
 .footer-tel:focus {
   color: var(--accent-color);
+}
+.social-links {
+  display: flex;
+}
+.social > p {
+  color: var(--primary-white-color);
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.social-links li {
+  margin-right: 10px;
+}
+.social-links a {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  fill: var(--primary-white-color);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.social-links a:hover {
+  background-color: var(--accent-color);
 }
 /* PORTFOLIO */
 .button-flex {
