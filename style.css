@@ -56,6 +56,8 @@ button {
 }
 .header {
   border-bottom: 1px solid #ececec;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 /* Navigation */
 .container {
@@ -73,6 +75,7 @@ button {
   display: flex;
   align-items: center;
 }
+
 .link-opened {
   color: var(--accent-color);
   font-weight: 500;
@@ -81,8 +84,6 @@ button {
   letter-spacing: 0.02em;
 }
 .item {
-  margin-top: 32px;
-  margin-bottom: 32px;
   margin-right: 50px;
 }
 
@@ -115,16 +116,24 @@ button {
 .contacts-nav {
   display: flex;
   margin-left: auto;
+  align-items: center;
 }
 .contacts a {
+  display: flex;
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  align-items: center;
 }
 .contacts a:hover {
   color: var(--accent-color);
+}
+
+.contact {
+  margin-right: 10px;
+  fill: currentColor;
 }
 /* Hero */
 .hero {
@@ -181,13 +190,31 @@ button {
 .features-block {
   margin-right: 30px;
 }
+.features-block:last-child {
+  margin-right: 0px;
+}
+
 .features-block::before {
   content: "";
   display: block;
   height: 120px;
+  margin-bottom: 30px;
   background-repeat: no-repeat;
-  background-size: contain;
   background-position: center;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+.icon-antenna::before {
+  background-image: url(./icons/antenna1.svg);
+}
+.icon-clock::before {
+  background-image: url(./icons/clock\ 1.svg);
+}
+.icon-diagram::before {
+  background-image: url(./icons/diagram\ 1.svg);
+}
+.icon-astronaut::before {
+  background-image: url(./icons/astronaut1.svg);
 }
 .features-title {
   min-width: 270px;
@@ -299,6 +326,11 @@ button {
 }
 .clients-container {
   display: flex;
+}
+.client-card {
+  width: 170px;
+  height: 90px;
+  text-align: center;
 }
 /* footer */
 .footer {
