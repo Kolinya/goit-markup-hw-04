@@ -74,10 +74,12 @@ button {
 .main-nav {
   display: flex;
   align-items: center;
-  padding-top: 24px;
-  padding-bottom: 25px;
 }
-
+.link,
+.link-opened {
+  padding-bottom: 32px;
+  padding-top: 32px;
+}
 .link-opened {
   color: var(--accent-color);
   font-weight: 500;
@@ -120,7 +122,7 @@ button {
   margin-left: auto;
   align-items: center;
 }
-.contacts a {
+.contacts .link {
   display: flex;
   color: var(--primary-text-color);
   font-weight: 500;
